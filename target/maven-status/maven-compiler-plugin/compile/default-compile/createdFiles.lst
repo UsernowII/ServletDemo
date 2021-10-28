@@ -1,2 +1,2 @@
-co\edu\unbosque\ciclo3demo\HolaMundoServlet.class
-co\edu\unbosque\ciclo3demo\ParametrosGetServlet.class
+org\aguzman\webapp2\servlet\HolaMundoServlet.class
+org\aguzman\webapp2\servlet\ParametrosGetServlet.class
