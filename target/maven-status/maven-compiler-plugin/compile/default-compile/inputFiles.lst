@@ -1,1 +1,11 @@
-C:\Users\Usernow\IdeaProjects\Andres Guzman MasterJava\webapp-form\src\main\java\com\webapp\apiservlet\form\FormServlet.java
+C:\Users\Usernow\IdeaProjects\Andres Guzman MasterJava\webbapp-headers\src\main\java\org\aguzman\apiservlet\webapp\headers\controller\ProductoJsonServlet.java
+C:\Users\Usernow\IdeaProjects\Andres Guzman MasterJava\webbapp-headers\src\main\java\org\aguzman\apiservlet\webapp\headers\controller\ProductoXlsServlet.java
+C:\Users\Usernow\IdeaProjects\Andres Guzman MasterJava\webbapp-headers\src\main\java\org\aguzman\apiservlet\webapp\headers\controller\CabecerasHttpRequestServlet.java
+C:\Users\Usernow\IdeaProjects\Andres Guzman MasterJava\webbapp-headers\src\main\java\org\aguzman\apiservlet\webapp\headers\model\Producto.java
+C:\Users\Usernow\IdeaProjects\Andres Guzman MasterJava\webbapp-headers\src\main\java\org\aguzman\apiservlet\webapp\headers\controller\RedirigirServlet.java
+C:\Users\Usernow\IdeaProjects\Andres Guzman MasterJava\webbapp-headers\src\main\java\org\aguzman\apiservlet\webapp\headers\controller\DespacharServlet.java
+C:\Users\Usernow\IdeaProjects\Andres Guzman MasterJava\webbapp-headers\src\main\java\org\aguzman\apiservlet\webapp\headers\services\ProductoService.java
+C:\Users\Usernow\IdeaProjects\Andres Guzman MasterJava\webbapp-headers\src\main\java\org\aguzman\apiservlet\webapp\headers\services\ProductoServiceImpl.java
+C:\Users\Usernow\IdeaProjects\Andres Guzman MasterJava\webbapp-headers\src\main\java\org\aguzman\apiservlet\webapp\headers\controller\LoginServlet.java
+C:\Users\Usernow\IdeaProjects\Andres Guzman MasterJava\webbapp-headers\src\main\java\org\aguzman\apiservlet\webapp\headers\controller\HoraActualizadaServlet.java
+C:\Users\Usernow\IdeaProjects\Andres Guzman MasterJava\webbapp-headers\src\main\java\org\aguzman\apiservlet\webapp\headers\controller\BuscarProductoServlet.java

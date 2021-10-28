@@ -1,1 +1,11 @@
-com\webapp\apiservlet\form\FormServlet.class
+org\aguzman\apiservlet\webapp\headers\services\ProductoServiceImpl.class
+org\aguzman\apiservlet\webapp\headers\controller\BuscarProductoServlet.class
+org\aguzman\apiservlet\webapp\headers\controller\LoginServlet.class
+org\aguzman\apiservlet\webapp\headers\controller\ProductoJsonServlet.class
+org\aguzman\apiservlet\webapp\headers\services\ProductoService.class
+org\aguzman\apiservlet\webapp\headers\model\Producto.class
+org\aguzman\apiservlet\webapp\headers\controller\RedirigirServlet.class
+org\aguzman\apiservlet\webapp\headers\controller\CabecerasHttpRequestServlet.class
+org\aguzman\apiservlet\webapp\headers\controller\DespacharServlet.class
+org\aguzman\apiservlet\webapp\headers\controller\HoraActualizadaServlet.class
+org\aguzman\apiservlet\webapp\headers\controller\ProductoXlsServlet.class
