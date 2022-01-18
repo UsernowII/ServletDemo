@@ -13,6 +13,7 @@ import java.io.PrintWriter;
 public class LoginServlet extends HttpServlet {
     final static String USERNAME = "admin";
     final static String PASSWORD = "12345";
+
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String username = req.getParameter("username");

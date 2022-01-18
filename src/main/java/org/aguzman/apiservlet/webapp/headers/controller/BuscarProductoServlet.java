@@ -22,7 +22,7 @@ public class BuscarProductoServlet extends HttpServlet {
         String nombre = req.getParameter("producto");
 
         Optional<Producto> encontrado = service.listar().stream().filter(producto -> {
-            if(nombre.isBlank()){
+            if(nombre == null || nombre.isBlank()){
                 return false;
             }
             return producto.getNombre().contains(nombre);}).findFirst();
@@ -44,7 +44,7 @@ public class BuscarProductoServlet extends HttpServlet {
                 out.println("</html>");
             }
         }else{
-            resp.sendError(HttpServletResponse.SC_NOT_FOUND, "Lo sentimos no se encontró el producto");
+            resp.sendError(HttpServletResponse.SC_NOT_FOUND, "Lo sentimos no se encontró el producto " + nombre);
         }
 
     }
