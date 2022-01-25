@@ -10,7 +10,7 @@ import java.util.Arrays;
 import java.util.Enumeration;
 import java.util.List;
 
-@WebServlet("/actualizar-carro")
+@WebServlet("/carro/actualizar")
 public class ActualizarCarroServlet extends HttpServlet {
 
 
@@ -24,7 +24,7 @@ public class ActualizarCarroServlet extends HttpServlet {
             updateCantidades(request, carro);
         }
 
-        response.sendRedirect(request.getContextPath()+"/ver-carro");
+        response.sendRedirect(request.getContextPath()+"/carro/ver");
     }
 
     private void updateProductos(HttpServletRequest request, Carro carro){

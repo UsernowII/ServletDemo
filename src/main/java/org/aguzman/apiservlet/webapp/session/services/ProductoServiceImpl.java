@@ -2,6 +2,7 @@ package org.aguzman.apiservlet.webapp.session.services;
 
 
 
+import org.aguzman.apiservlet.webapp.session.model.Categoria;
 import org.aguzman.apiservlet.webapp.session.model.Producto;
 
 import java.util.Arrays;
@@ -19,5 +20,25 @@ public class ProductoServiceImpl implements ProductoService{
     @Override
     public Optional<Producto> findById(Long id) {
         return listar().stream().filter( p -> p.getId().equals(id)).findAny();
+    }
+
+    @Override
+    public void save(Producto producto) {
+
+    }
+
+    @Override
+    public void delete(Long id) {
+
+    }
+
+    @Override
+    public List<Categoria> listarCategorias() {
+        return null;
+    }
+
+    @Override
+    public Optional<Categoria> findByIdCategoria(Long id) {
+        return Optional.empty();
     }
 }

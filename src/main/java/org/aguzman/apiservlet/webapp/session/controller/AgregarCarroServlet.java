@@ -11,32 +11,30 @@ import org.aguzman.apiservlet.webapp.session.model.ItemCarro;
 import org.aguzman.apiservlet.webapp.session.model.Producto;
 import org.aguzman.apiservlet.webapp.session.services.ProductoService;
 import org.aguzman.apiservlet.webapp.session.services.ProductoServiceImpl;
+import org.aguzman.apiservlet.webapp.session.services.ProductoServiceJdbcImpl;
 
 import java.io.IOException;
+import java.sql.Connection;
 import java.util.Optional;
 
-@WebServlet("/agregar-carro")
+@WebServlet("/carro/agregar")
 public class AgregarCarroServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Long id = Long.parseLong(req.getParameter("id")) ;
-        ProductoService service = new ProductoServiceImpl();
+        //Obtenemos la connexion en el request del filter
+        Connection conn = (Connection)req.getAttribute("conn");
+        ProductoService service = new ProductoServiceJdbcImpl(conn);
         Optional <Producto> producto = service.findById(id);
         if (producto.isPresent()){
             ItemCarro itemCarro = new ItemCarro(1, producto.get());
             HttpSession session = req.getSession();
-            Carro carro;
-            if(session.getAttribute("carro") == null){
-                carro = new Carro();
-                session.setAttribute("carro", carro);
-            }else{
-                carro = (Carro) session.getAttribute("carro");
-            }
+            Carro carro = (Carro) session.getAttribute("carro");
             carro.addItemCarro(itemCarro);
         }
 
-        resp.sendRedirect(req.getContextPath() + "/ver-carro");
+        resp.sendRedirect(req.getContextPath() + "/carro/ver");
 
     }
 }
